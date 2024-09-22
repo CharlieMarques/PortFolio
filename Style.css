@@ -1,0 +1,385 @@
+
+*{
+    box-sizing:  border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{   
+    scroll-behavior:  smooth;
+}
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width:  100%;
+    top:0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+ max-height: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'righteous';
+    font-size: 36px;
+    color:#EB5209;
+    text-decoration: none;
+
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #EB5209;
+}
+.nav-responsive{
+    background-color: #EB5209;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+.photo{
+    width: 30%;
+    height: 30%;
+}
+/*SECCION I n i c i o*/
+.inicio{
+    padding-top: 16px;
+background: linear-gradient(#0000,#0009),url(Images/fondo.jpg);
+background-size: cover;
+height: 100vh;
+color: #fff;
+display: flex;
+align-items: center;
+}
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid #EB5209;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .contenido-banner h1{
+    margin-top: 5px;
+    font-size: 26px;
+    font-family: 'Righteous';
+}
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+    font-family: 'Righteous';
+}
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border:  1px solid #fff;
+    border-radius: 90%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido-banner .redes a:hover{
+    background-color: #EB5209;
+}
+.sobremi{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 110px;
+}
+
+.sobremi .contenido-seccion{
+max-width: 1100px;
+margin: auto;
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family:'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .contenido-seccion p span{
+    color: #EB5209;
+    font-weight: bold;
+}
+
+/*Seccion  S k i l l s */
+.skills{
+    background-color: #252a2e;
+    text-align: center;
+    color: #fff;
+    padding: 110px;
+}
+
+.skills .contenido-seccion{
+max-width: 1100px;
+margin: auto;
+}
+.skills h2{
+    font-size: 48px;
+    font-family:'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.skills .fila{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+.skills .fila .col{
+display: flex;
+width: 50%;
+padding: 10px;
+
+}
+
+.skills .contenido-seccion .habilidades{
+    
+    width: 75px;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+}
+.skills .skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
+
+/*Seccion P R O Y E C T O S */
+.proyectos{
+    background-color: #1e2326;
+    color: #fff;
+    padding-top: 120px;
+    padding-bottom: 240px;
+}
+.proyectos .contenido-seccion{
+    max-width: 1100px;
+margin: auto;
+}
+.proyectos h2{
+    font-size: 48px;
+    font-family:'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.proyectos .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end
+}
+.proyectos .galeria .proyecto{
+    position: relative;
+    max-width:  500px;
+    height: 320px;
+    margin: 10px;
+    cursor: pointer;
+}
+.proyectos .galeria .descripcion{
+    width: 48%;
+}
+.proyectos .galeria .descripcion p{
+    text-align: center;
+}
+.proyectos .galeria .proyecto .link{ 
+    text-align: center;
+    font-size: 48px;
+}
+.proyectos .galeria .proyecto .link a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border:  1px solid #fff;
+    border-radius: 90%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.proyectos .galeria .proyecto .link a:hover{
+    background-color: #EB5209;
+}
+.proyectos .galeria .proyecto img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.proyectos .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background:  linear-gradient(rgba(235, 82, 9, 0.8),rgba(235, 81, 9, 0.151));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+    
+}
+.proyectos .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.proyectos .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+.proyectos .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}
+
+/*Seccion C O N T A C T O*/
+.contacto{
+    background-color: #252a2e;
+    color: #fff;
+    padding: 50px 0;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border:none;
+    margin-bottom: 20px;
+    background-color:#1e2326;
+    color: #fff;
+    font-size: 18px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size:  16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #EB5209;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+footer{
+    background-color: #1e2326;
+    color:#fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom:  20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border:  1px solid #fff;
+    border-radius: 90%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .redes a:hover{
+    background-color: #EB5209;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #EB5209;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top:-25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+
+}
+
+
